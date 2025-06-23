@@ -1,0 +1,197 @@
+# Exercícios de Lógica em Dart - Nível Iniciante a Intermediário (Null Safety e Conceitos Essenciais)
+
+Esta lista contém 50 exercícios focados em fundamentos importantes do Dart, como null safety, tratamento básico de erros, coleções, funções, e conceitos iniciais de programação orientada a objetos e assíncrona.
+
+---
+
+## 1. Null Safety Básico
+
+1. Declare uma variável `String?` que pode ser nula e imprima seu valor usando o operador seguro `?.`.  
+   Dica: `print(nome?.length);`
+
+2. Crie uma variável que pode ser nula e use `??` para definir um valor padrão ao imprimir.  
+   Dica: `var texto = textoNulo ?? 'valor padrão';`
+
+3. Experimente usar o operador `!` para forçar o acesso a um valor nulo (veja o erro que ocorre).  
+   Dica: Use com cuidado!
+
+4. Crie uma função que recebe um `int?` e retorna 0 se o valor for nulo.  
+   Dica: Use o operador ternário ou `??`.
+
+5. Declare uma variável `late int` e inicialize depois antes de usar.  
+   Dica: Tente usar antes de inicializar e veja o erro.
+
+---
+
+## 2. Tratamento Básico de Erros
+
+6. Tente converter uma string para número dentro de um bloco `try/catch`.  
+   Dica: Capture exceção para entrada inválida.
+
+7. Capture um erro específico usando `on FormatException`.  
+   Dica: Diferencie erros para tratamento específico.
+
+8. Use `finally` para imprimir uma mensagem após `try/catch`.  
+   Dica: `finally` executa sempre.
+
+9. Crie uma função que lança uma exceção quando recebe número negativo.  
+   Dica: Use `throw Exception('Erro')`.
+
+10. Capture e imprima uma exceção personalizada.  
+    Dica: Crie uma classe que estenda `Exception`.
+
+---
+
+## 3. Coleções Simples
+
+11. Crie uma lista de números e imprima todos os elementos.  
+    Dica: Use `for (var n in lista)`.
+
+12. Some os valores de uma lista de inteiros.  
+    Dica: Use um acumulador.
+
+13. Filtre valores maiores que 10 em uma lista.  
+    Dica: Use `.where()`.
+
+14. Crie um Map com pares chave-valor e imprima todos.  
+    Dica: Use `.forEach()`.
+
+15. Remova um elemento específico da lista.  
+    Dica: Use `.remove()`.
+
+---
+
+## 4. Funções Básicas
+
+16. Crie uma função que imprime "Olá, Dart!" e chame ela.  
+    Dica: Use `void funcao() { ... }`.
+
+17. Crie uma função que recebe um nome e imprime uma saudação.  
+    Dica: Use parâmetro de função.
+
+18. Crie uma função que soma dois números e retorna o resultado.  
+    Dica: Use `return`.
+
+19. Crie uma função que verifica se um número é par e retorna `true` ou `false`.  
+    Dica: Use `% 2`.
+
+20. Crie uma função que recebe uma lista e retorna a soma dos valores.  
+    Dica: Use laço para somar.
+
+---
+
+## 5. Orientação a Objetos Básica
+
+21. Crie uma classe `Pessoa` com nome e idade e um método para imprimir os dados.  
+    Dica: Use `class` e `void metodo()`.
+
+22. Instancie objetos da classe `Pessoa` e imprima os dados.  
+    Dica: Use `Pessoa p = Pessoa(...)`.
+
+23. Use propriedades `String?` que podem ser nulas e trate o acesso.  
+    Dica: Use `?` ao acessar.
+
+24. Crie um construtor para a classe `Pessoa`.  
+    Dica: Use `Pessoa(this.nome, this.idade);`.
+
+25. Crie uma subclasse que estende `Pessoa` e adicione uma propriedade extra.  
+    Dica: Use `extends`.
+
+---
+
+## 6. Programação Assíncrona Básica
+
+26. Crie uma função `Future` que retorna um valor após 2 segundos.  
+    Dica: Use `Future.delayed`.
+
+27. Use `async/await` para chamar a função e imprimir o resultado.  
+    Dica: Use `await`.
+
+28. Faça tratamento de erro em função assíncrona com `try/catch`.  
+    Dica: Use `try/catch` dentro de `async`.
+
+29. Combine duas funções `Future` com `Future.wait`.  
+    Dica: Aguarde ambas completarem.
+
+30. Use um `Stream` para emitir números de 1 a 5 com delay.  
+    Dica: Use `Stream.periodic`.
+
+---
+
+## 7. Operadores e Boas Práticas
+
+31. Use operador ternário para verificar e imprimir se um número é positivo.  
+    Dica: `condicao ? valor1 : valor2`.
+
+32. Use operador `??` para valores padrão em variáveis que podem ser nulas.  
+    Dica: Exemplo `var x = nulo ?? 0`.
+
+33. Use o operador spread `...` para unir duas listas.  
+    Dica: `var lista3 = [...lista1, ...lista2];`
+
+34. Use `if` dentro de lista para adicionar elementos condicionalmente.  
+    Dica: `[1, 2, if(cond) 3]`
+
+35. Use comentários para documentar uma função simples.  
+    Dica: Use `///` para documentação.
+
+---
+
+## 8. Manipulação Simples de Strings
+
+36. Faça uma interpolação simples de strings com variáveis.  
+    Dica: Use `"Olá, $nome"`.
+
+37. Concatene duas strings usando `+`.  
+    Dica: `"Dart " + "é legal"`.
+
+38. Use `.toUpperCase()` e `.toLowerCase()` para alterar texto.  
+    Dica: `"texto".toUpperCase()`.
+
+39. Extraia uma substring usando `.substring()`.  
+    Dica: `"abcdef".substring(1,4)`.
+
+40. Separe uma string em lista usando `.split()`.  
+    Dica: `"a,b,c".split(",")`.
+
+---
+
+## 9. Listas e Mapas com Null Safety
+
+41. Crie uma lista que pode ser nula e trate ao imprimir.  
+    Dica: Use `List<String>? lista;` e `lista?.forEach(...)`.
+
+42. Adicione elementos a uma lista que pode ser nula (tratando o null).  
+    Dica: Inicialize se for nula.
+
+43. Crie um Map que pode conter valores nulos e filtre os não nulos.  
+    Dica: Use `.removeWhere()`.
+
+44. Atualize valores em Map verificando se a chave existe.  
+    Dica: Use `map.containsKey()`.
+
+45. Imprima valores de Map usando null safety no acesso.  
+    Dica: `map['chave'] ?? 'default'`.
+
+---
+
+## 10. Funções e Null Safety
+
+46. Crie função que recebe parâmetro nulo e retorna valor padrão.  
+    Dica: Use `??`.
+
+47. Função com parâmetro nomeado opcional com valor padrão.  
+    Dica: `void f({String nome = "usuário"})`.
+
+48. Função que retorna null em algumas condições e use null safety ao consumir.  
+    Dica: Use operador `?`.
+
+49. Função que recebe lista nula e soma valores se não for nula.  
+    Dica: Use `lista?.fold(0, ...) ?? 0`.
+
+50. Função que lança exceção caso parâmetro seja nulo e trate isso fora da função.  
+    Dica: Use `throw` e `try/catch`.
+
+---
+
+**Boa prática e bons estudos! 🚀**
