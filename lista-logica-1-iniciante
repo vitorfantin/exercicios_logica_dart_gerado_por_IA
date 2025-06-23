@@ -1,0 +1,265 @@
+# Lista de Exercícios de Lógica de Programação em Dart
+
+Esta lista contém 50 exercícios práticos para quem está aprendendo Dart, focados em lógica de programação. Os exercícios estão organizados em 10 tópicos fundamentais e evoluem gradualmente do nível iniciante ao intermediário.
+
+## Sobre a dificuldade
+
+- 🟢 **Iniciante:** Exercícios básicos para entender conceitos fundamentais, como variáveis, tipos de dados, entrada e saída, e estruturas simples.
+- 🟡 **Iniciante/Intermediário:** Exercícios que combinam conceitos, incluindo manipulação de listas, funções com parâmetros e retorno, e laços condicionais.
+- 🟠 **Intermediário:** Exercícios que exigem raciocínio mais elaborado, envolvendo estruturas aninhadas, manipulação de coleções, e lógica de repetição e decisão mais complexa.
+
+## Objetivo
+
+Estes exercícios têm como objetivo desenvolver seu raciocínio lógico e familiaridade com a sintaxe e recursos do Dart, preparando você para projetos mais avançados e desafios reais de programação.
+
+---
+
+## Tópicos e Exercícios
+
+---
+
+### 1. Variáveis e Tipos de Dados
+
+1. **Crie e imprima suas informações**  
+   Explicação: Crie variáveis para seu nome (texto), idade (inteiro), altura (número com vírgula) e se você é estudante (verdadeiro ou falso). Imprima esses dados no console.  
+   Dica: Use `String`, `int`, `double` e `bool`.
+
+2. **Soma de dois inteiros**  
+   Explicação: Crie duas variáveis inteiras, some os valores e mostre o resultado.  
+   Dica: Crie uma terceira variável para a soma.
+
+3. **Converta número para texto**  
+   Explicação: Crie uma variável `int`, converta para string e imprima.  
+   Dica: Use `.toString()`.
+
+4. **Trabalhe com `var` e `dynamic`**  
+   Explicação: Crie uma variável com `var` e outra com `dynamic`. Tente mudar os valores depois da declaração e observe o comportamento.  
+   Dica: `dynamic` permite mudar o tipo, `var` não.
+
+5. **Misture tipos diferentes**  
+   Explicação: Crie um `int` e um `double`, some-os e imprima o tipo da variável resultado.  
+   Dica: Use `.runtimeType` para descobrir o tipo.
+
+---
+
+### 2. Entrada e Saída de Dados
+
+1. **Peça o nome do usuário**  
+   Explicação: Leia o nome do usuário e mostre uma mensagem de boas-vindas.  
+   Dica: Use `stdin.readLineSync()` e `print()`.
+
+2. **Some dois números digitados**  
+   Explicação: Leia dois números do usuário e mostre a soma.  
+   Dica: Converta as entradas para `int` ou `double`.
+
+3. **Calcule a média de três notas**  
+   Explicação: Leia três notas (decimais), calcule e mostre a média com duas casas decimais.  
+   Dica: Use `double.parse()` e faça `(n1 + n2 + n3) / 3`.
+
+4. **Mostre tipo e valor digitado**  
+   Explicação: Leia qualquer valor e mostre o valor e o tipo.  
+   Dica: Use `.runtimeType`.
+
+5. **Conversão entre tipos**  
+   Explicação: Leia um número como texto, converta para inteiro e mostre o dobro.  
+   Dica: Use `int.parse()`.
+
+---
+
+### 3. Operadores Aritméticos e Relacionais
+
+1. **Operações básicas com dois números**  
+   Explicação: Declare dois números e calcule soma, subtração, multiplicação e divisão.  
+   Dica: Use `+`, `-`, `*` e `/`.
+
+2. **Verifique se dois valores são iguais**  
+   Explicação: Leia dois números e informe se são iguais ou diferentes.  
+   Dica: Use `==` e `!=`.
+
+3. **Descubra o maior entre dois números**  
+   Explicação: Leia dois números e mostre o maior.  
+   Dica: Use `if` e operadores `>` e `<`.
+
+4. **Par ou ímpar**  
+   Explicação: Leia um número e informe se é par ou ímpar.  
+   Dica: Use `%` para verificar o resto da divisão por 2.
+
+5. **Compare três números**  
+   Explicação: Leia três números e mostre o maior e o menor.  
+   Dica: Combine vários `if` com `&&`.
+
+---
+
+### 4. Condicionais (`if`, `else`, `else if`)
+
+1. **Verifique se é maior de idade**  
+   Explicação: Leia a idade e diga se é maior ou menor de idade (>=18).  
+   Dica: Use `if (idade >= 18)`.
+
+2. **Número positivo, negativo ou zero**  
+   Explicação: Leia um número e diga se é positivo, negativo ou zero.  
+   Dica: Use `if`, `else if` e `else`.
+
+3. **Nota e conceito**  
+   Explicação: Leia uma nota de 0 a 10 e mostre conceito A, B, C ou D conforme intervalo.  
+   Dica: Use `if` e `else if` para verificar intervalos.
+
+4. **Login simples**  
+   Explicação: Leia usuário e senha, só permita acesso se forem “admin” e “1234”.  
+   Dica: Use `==` para comparar strings e `&&` para combinar.
+
+5. **Calculadora simples**  
+   Explicação: Leia dois números e um operador (+, -, *, /) e calcule o resultado.  
+   Dica: Use vários `if` para cada operador.
+
+---
+
+### 5. Laços de Repetição (for, while, do...while)
+
+1. **Contar de 1 a 10**  
+   Explicação: Use um `for` para imprimir números de 1 a 10.  
+   Dica: `for (int i = 1; i <= 10; i++)`.
+
+2. **Somar de 1 até número informado**  
+   Explicação: Leia um número e use `while` para somar de 1 até esse número.  
+   Dica: Use um contador e uma variável acumuladora.
+
+3. **Contagem regressiva com `do...while`**  
+   Explicação: Leia um número e faça contagem regressiva até 1.  
+   Dica: `do { ... } while (condição)`.
+
+4. **Tabuada de multiplicação**  
+   Explicação: Leia um número e mostre sua tabuada de 1 a 10.  
+   Dica: Use `for` e multiplicação.
+
+5. **Senha até acertar**  
+   Explicação: Leia senhas do usuário até que a senha correta seja digitada.  
+   Dica: Use `while` para repetir.
+
+---
+
+### 6. Listas e Coleções Simples
+
+1. **Crie uma lista de frutas**  
+   Explicação: Crie uma lista com 3 frutas e imprima.  
+   Dica: Use `List<String>`.
+
+2. **Acesse o primeiro e último item**  
+   Explicação: Imprima o primeiro e último elemento da lista.  
+   Dica: Use índices.
+
+3. **Adicione um item na lista**  
+   Explicação: Adicione uma fruta nova ao final e imprima.  
+   Dica: Use `.add()`.
+
+4. **Remova um item da lista**  
+   Explicação: Remova uma fruta pelo nome e mostre a lista.  
+   Dica: Use `.remove()`.
+
+5. **Percorra a lista e imprima cada fruta**  
+   Explicação: Use um `for` para imprimir cada fruta em linha separada.  
+   Dica: Use `for (var fruta in lista)`.
+
+---
+
+### 7. Funções (Definir e Chamar)
+
+1. **Função que imprime mensagem**  
+   Explicação: Crie uma função que imprime “Olá, mundo!” e chame no `main`.  
+   Dica: `void nomeDaFuncao() { ... }`.
+
+2. **Função que recebe nome e imprime saudação**  
+   Explicação: Função que recebe `String` e imprime “Olá, nome!”.  
+   Dica: Use parâmetro e interpolação.
+
+3. **Função que soma dois números**  
+   Explicação: Função que recebe dois números e retorna a soma.  
+   Dica: Use `return`.
+
+4. **Função que verifica se número é par**  
+   Explicação: Função que retorna `true` se o número for par, `false` se ímpar.  
+   Dica: Use operador `%`.
+
+5. **Função que calcula média de uma lista**  
+   Explicação: Função que recebe lista de números e retorna média.  
+   Dica: Use laço para somar e divida pela quantidade.
+
+---
+
+### 8. Laços com Listas
+
+1. **Imprima todos os itens da lista**  
+   Explicação: Dada uma lista de nomes, imprima cada um com `for`.  
+   Dica: Use `for (var item in lista)`.
+
+2. **Some todos os números da lista**  
+   Explicação: Calcule soma dos números de uma lista.  
+   Dica: Use variável acumuladora.
+
+3. **Conte quantos números são pares**  
+   Explicação: Conte elementos pares em uma lista.  
+   Dica: Use `%` dentro do laço.
+
+4. **Crie nova lista com números dobrados**  
+   Explicação: Dada uma lista, crie outra com valores multiplicados por 2.  
+   Dica: Use laço para popular nova lista.
+
+5. **Remova números ímpares da lista original**  
+   Explicação: Remova todos os números ímpares da lista.  
+   Dica: Use `.remove()` ou crie nova lista só com pares.
+
+---
+
+### 9. Switch / Case
+
+1. **Nome do dia da semana**  
+   Explicação: Use número de 1 a 7 para mostrar nome do dia.  
+   Dica: Use `switch` e `case`.
+
+2. **Classifique uma fruta pelo código**  
+   Explicação: Use código para mostrar nome da fruta.  
+   Dica: Use `switch`.
+
+3. **Verifique operador aritmético**  
+   Explicação: Peça operador e mostre qual foi escolhido.  
+   Dica: `switch` com `String`.
+
+4. **Calculadora simples com switch**  
+   Explicação: Use switch para calcular operação entre dois números.  
+   Dica: `switch` para cada operador.
+
+5. **Mês do ano pelo número**  
+   Explicação: Mostre nome do mês pelo número, use `default` para inválidos.  
+   Dica: Use `switch`.
+
+---
+
+### 10. Boas Práticas de Identação e Comentários
+
+1. **Identar um código simples**  
+   Explicação: Escreva um código com identação correta.  
+   Dica: Use 2 ou 4 espaços por nível.
+
+2. **Comente seu código**  
+   Explicação: Comente as linhas de um código simples.  
+   Dica: Use `//` para comentários de linha.
+
+3. **Use comentários em bloco**  
+   Explicação: Comente funções usando `/* ... */`.  
+   Dica: Explicações maiores ficam melhor assim.
+
+4. **Refatore código mal indentado**  
+   Explicação: Organize um código sem indentação.  
+   Dica: Pense em blocos de código para identar.
+
+5. **Explique código complexo com comentários**  
+   Explicação: Faça um código com laço e condicional, comentando o passo a passo.  
+   Dica: Comente partes importantes para clareza.
+
+---
+
+**Boa prática e bons estudos! 🚀**
+
+---
+
+Quer que eu te envie o arquivo pronto para download?
