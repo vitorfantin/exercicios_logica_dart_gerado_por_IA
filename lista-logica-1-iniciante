@@ -232,32 +232,3 @@ Estes exercícios têm como objetivo desenvolver seu raciocínio lógico e famil
    Explicação: Mostre nome do mês pelo número, use `default` para inválidos.  
    Dica: Use `switch`.
 
----
-
-### 10. Boas Práticas de Identação e Comentários
-
-1. **Identar um código simples**  
-   Explicação: Escreva um código com identação correta.  
-   Dica: Use 2 ou 4 espaços por nível.
-
-2. **Comente seu código**  
-   Explicação: Comente as linhas de um código simples.  
-   Dica: Use `//` para comentários de linha.
-
-3. **Use comentários em bloco**  
-   Explicação: Comente funções usando `/* ... */`.  
-   Dica: Explicações maiores ficam melhor assim.
-
-4. **Refatore código mal indentado**  
-   Explicação: Organize um código sem indentação.  
-   Dica: Pense em blocos de código para identar.
-
-5. **Explique código complexo com comentários**  
-   Explicação: Faça um código com laço e condicional, comentando o passo a passo.  
-   Dica: Comente partes importantes para clareza.
-
----
-
-**Boa prática e bons estudos! 🚀**
-
----
